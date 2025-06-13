@@ -9,6 +9,6 @@ public class CreateRecordRequestDto
     public string? TaskName { get; set; }
     public string? TaskDescription { get; set; }
     public int StudentId { get; set; }
-    public JSType.BigInt ExecutionTime { get; set; }
+    public int ExecutionTime { get; set; }
     public DateTime? Created { get; set; }
 }

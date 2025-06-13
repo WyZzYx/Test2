@@ -14,7 +14,7 @@ public class Record
     public int StudentId { get; set; }
     public Student Student { get; set; }
     
-    public JSType.BigInt ExecutionTime { get; set; }
+    public int ExecutionTime { get; set; }
     public DateTime Created { get; set; }
 
 }

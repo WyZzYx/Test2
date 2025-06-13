@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Test.Data;
+using Test.DAL;
 using Test.Services;
 
 var builder = WebApplication.CreateBuilder(args);

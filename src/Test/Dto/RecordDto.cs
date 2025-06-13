@@ -8,6 +8,6 @@ public class RecordDto
     public LanguageDto Language { get; set; }
     public TaskDto Task { get; set; }
     public StudentDto Student { get; set; }
-    public JSType.BigInt ExecutionTime { get; set; }
+    public int ExecutionTime { get; set; }
     public string Created { get; set; }
 }

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Test.Data;
+using Test.DAL;
 using Test.Dto;
 using Test.Models;
 
@@ -36,7 +36,7 @@ public class RecordService : IRecordService
             if (string.IsNullOrWhiteSpace(requestDto.TaskName) ||
                 string.IsNullOrWhiteSpace(requestDto.TaskDescription))
             {
-                throw new Exception("Task not found. Provide taskName and taskDescription to create it.");
+                throw new Exception("Task not found. Provide Name and Description to create it");
             }
 
             taskEntity = new TaskEntity

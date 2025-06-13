@@ -1,7 +1,8 @@
+using System.Runtime.InteropServices.JavaScript;
 using Microsoft.EntityFrameworkCore;
 using Test.Models;
 
-namespace Test.Data;
+namespace Test.DAL;
 
 public class RecordManiaDbContext : DbContext
 {
@@ -44,16 +45,17 @@ public class RecordManiaDbContext : DbContext
         {
             new (){Id = 1, Name = "Vitalii", LastName = "Koltok", Email = "Winner@gmail.com"}
         });
-        
-        modelBuilder.Entity<Record>().HasData(new List<Record>()
-        {
-            new (){Id = 1, LanguageId = 1, StudentId = 1, TaskId = 1, Created = DateTime.UtcNow}
-        });
-        
         modelBuilder.Entity<TaskEntity>().HasData(new List<TaskEntity>()
         {
             new (){Id = 1, Name = "Task1", Description = "Desc1"}
         });
+        
+        modelBuilder.Entity<Record>().HasData(new List<Record>()
+        {
+            new (){Id = 1, LanguageId = 1, StudentId = 1, TaskId = 1, Created = DateTime.UtcNow, ExecutionTime = 1500}
+        });
+        
+        
         
     }
 }

@@ -10,9 +10,9 @@ public class RecordsController : ControllerBase
 {
     private readonly IRecordService _service;
 
-    public RecordsController(IRecordService _service)
+    public RecordsController(IRecordService service)
     {
-        this._service = _service;
+        this._service = service;
     }
 
     [HttpPost]
