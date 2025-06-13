@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{80D3994C-4135-4DAC-A8F8-BDDF6988EACA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src\Test", "src\Test\Test.csproj", "{80D3994C-4135-4DAC-A8F8-BDDF6988EACA}"
 EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	GlobalSection(SolutionConfigurationPlatf\rms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
